@@ -2,17 +2,18 @@
 using SpoopyWebAPI.Models;
 
 namespace SpoopyWebAPI.Data;
-public class SpoopyDbContext : DbContext 
+public class SpoopyDbContext : DbContext
 {
 
-    DbSet<SpoopyLogs> SpoopyLogs { get; set; }
+    public DbSet<SpoopyLogs> SpoopyLogs { get; set; }
 
-    public SpoopyDbContext() 
+    public SpoopyDbContext()
     {
 
     }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
         optionsBuilder.UseNpgsql();
     }
 

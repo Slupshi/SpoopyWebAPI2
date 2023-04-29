@@ -16,4 +16,14 @@
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.5.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\SpoopyLife\" />
+    <Folder Include="Controllers\SpoopyBot\" />
+    <Folder Include="Models\SpoopyBot\" />
+    <Folder Include="Models\SpoopyLife\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Services\SpoopyLife\" />
+    <Folder Include="Services\SpoopyBot\" />
+  </ItemGroup>
+
 </Project>
